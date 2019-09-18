@@ -4,6 +4,7 @@ var A = 200;
 var B = 250;
 var C = 0;
 
+var eyeColor= "black";
 
 function setup() {
 
@@ -12,7 +13,7 @@ function setup() {
 
   ellipse(X,Y,B,B)
 
-  fill("black");
+  fill(eyeColor);
   ellipse(X,Y,100,100)
 
 strokeWeight(50);
@@ -23,5 +24,22 @@ strokeWeight(50);
 }
 
 function draw() {
-  // put drawing code here
+
+}
+
+function keyPressed(){
+  console.log("key " + key);
+  console.log("keyCode " + keyCode);
+
+  if(key == "b"){
+    eyeColor = "blue";
+
+
+  }
+
+  if(key == "r"){
+    eyeColor = "red";
+
+
+  }
 }
