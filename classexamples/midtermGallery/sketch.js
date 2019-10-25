@@ -7,7 +7,7 @@ var hitX = [205,250];
 var hitY = [50,50];
 
 var hitSize = 20;
-var hitDistance = 0; //added
+
 
 var currentImage = 0;
 
@@ -31,8 +31,7 @@ function draw() {
   rect(hitX[0],hitY[0],hitSize,hitSize)
   rect(hitX[1],hitY[1],hitSize,hitSize)
 
-  hitDistance = dist(mouseX,mouseY,hitX,hitY); //added
-  console.log("hitDistance " + hitDistance); //added 
+
 
 }
 // end of draw

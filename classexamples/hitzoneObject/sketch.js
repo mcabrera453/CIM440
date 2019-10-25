@@ -32,6 +32,7 @@ class hitzoneObject{
     rect(this.x, this.y, this.boxSize, this.boxSize);
   }
 
+check()
 
 
 }// end of hitzoneObject
